@@ -28,7 +28,7 @@ export const Contact = () => {
                                 </Col>
 
                                 <Col md={12}>
-                                    <FloatingLabel controlId="floatingTextarea2" label="Mensagem">
+                                    <FloatingLabel controlId="floatingTextarea2" label="Mensagem...">
                                         <Form.Control as="textarea" placeholder="Leave a comment here" style={{ height: '100px' }} />
                                     </FloatingLabel>
                                 </Col>

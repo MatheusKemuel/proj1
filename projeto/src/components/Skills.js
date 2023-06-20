@@ -12,6 +12,7 @@ export const Skills = () => {
             <Container>
                 <h2>Tecnologias</h2>
                 <Row className="techs mt-5">
+                    
                     <Col className="tech" xm={12} md={4}>
                         <div className="tech-card figure">
                             <img src={html} alt="" />
