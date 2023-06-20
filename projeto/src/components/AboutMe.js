@@ -1,15 +1,18 @@
 import { Col, Container, Row } from "react-bootstrap"
 import profileImg from "../assets/user-solid.svg"
 import aboutmebg from "../assets/gradient (1).png"
+import 'animate.css';
+// import TrackVisibility from 'react-on-screen'
 
 export const AboutMe = () => {
     return (
         <section className="aboutMe" id="aboutMe">
-            <img src={aboutmebg} alt="" className="aboutmebg"/>
+            <img src={aboutmebg} alt="" className="aboutmebg" />
             <Container>
                 <Row>
                     <Col>
-                        <div className="about-me-content">
+
+                        <div className="about-me-content ">
                             <h2>Sobre Mim</h2>
                             <div className="profile mt-5">
                                 <img src={profileImg} alt="" />
@@ -20,6 +23,8 @@ export const AboutMe = () => {
                                 incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam
                             </article>
                         </div>
+
+
                     </Col>
                 </Row>
             </Container>
