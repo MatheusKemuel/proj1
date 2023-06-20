@@ -54,19 +54,6 @@ html {
     max-width: 600px;
     transform: scaleX(-1);
     margin-top: 170px;
-    animation: updown 3s linear infinite;
-}
-
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
 }
 
 @media (max-width: 768px) {
@@ -172,10 +159,10 @@ html {
 
 .aboutMe {
     margin-top: 70px;
-
+    
 }
 
-.aboutMe .aboutmebg {
+.aboutMe .aboutmebg{
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -197,7 +184,7 @@ html {
 
 .profile img {
     margin: 60px;
-
+    
 }
 
 .about-me-content {
@@ -262,7 +249,7 @@ html {
 /*****NAV*****/
 
 .nav-container {
-
+ 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -285,9 +272,9 @@ html {
 
 /* Bob */
 
-.link:hover {
-    text-decoration: none;
-    background-color: rgba(98, 95, 255, 0.514);
+.link:hover{
+	text-decoration: none;
+	background-color: rgba(98, 95, 255, 0.514);
 }
 
 /*===================*/
@@ -295,214 +282,65 @@ html {
 /*===================*/
 
 @-webkit-keyframes bob-on-hover {
-    0% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
-    }
-
-    50% {
-        -webkit-transform: translateY(-4px);
-        transform: translateY(-4px);
-    }
-
-    100% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
-    }
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
 }
-
 @keyframes bob-on-hover {
-    0% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
-    }
-
-    50% {
-        -webkit-transform: translateY(-4px);
-        transform: translateY(-4px);
-    }
-
-    100% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
-    }
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
 }
-
 @-webkit-keyframes bob-on-hover-float {
-    100% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
-    }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
 }
-
 @keyframes bob-on-hover-float {
-    100% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
-    }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
 }
-
 .bob-on-hover {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-
-.bob-on-hover:hover,
-.bob-on-hover:focus,
-.bob-on-hover:active {
-    -webkit-animation-name: bob-on-hover-float, bob-on-hover;
-    animation-name: bob-on-hover-float, bob-on-hover;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
+.bob-on-hover:hover, .bob-on-hover:focus, .bob-on-hover:active {
+  -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+  animation-name: bob-on-hover-float, bob-on-hover;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
-
-/************FOOTER***********/
-
-footer {
-    height: 230px;
-    background-color: #FB2678;
-}
-
-footer .social-icons a img {
-    width: 40px;
-}
-
-footer .footer-bottom-text {
-    display: flex;
-    justify-content: center;
-    padding-top: 180px;
-}
-
-footer .footer-bottom-text p {
-    color: white;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 100px;
-    margin-left: 100px;
-}
-
-/**********RESPONSIVE**********/
-
-@media (max-width: 1080px) {
-    .tech-card {
-        width: 250px;
-        height: 350px;
-    }
-}
-
-@media (max-width: 992px) {
-    .tech-card {
-        width: 200px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 767px) {
-    .tech-card {
-        width: 300px;
-        height: 400px;
-    }
-
-    .aboutMe .about-me-content article {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 1590px) {
-    .contact {
-        margin-top: 100px;
-    }
-}
-
-@media (max-width: 1400px) {
-    .contact {
-        margin-top: 80px;
-    }
-}
-@media (max-width: 992px) {
-    .contact {
-        margin-top: -10px;
-    }
-}
-
-@media (max-width: 769px) {
-    .contact {
-        margin-top: -145px;
-    }
-}
-
-@media (max-width: 491px) {
-    .contact {
-        margin-top: -189px;
-    }
-}
-
-@media (max-width: 470px) {
-    .contact {
-        margin-top: -260px;
-    }
-}
-
-@media (max-width: 430px) {
-    .contact {
-         margin-top: -350px;
-}
-}
-
-@media (max-width: 391px) {
-    .contact {
-       margin-top: -460px;
-    }
-}
-
-@media (max-width: 500px) {
-    .aboutMe .about-me-content article {
-        font-size: 24px;
-        margin-bottom: 150px;
-    }
-}
-
-@media (max-width: 400px) {
-    .aboutMe .about-me-content article {
-        font-size: 24px;
-        margin-bottom: 250px;
-    }
-}
-
-@media (max-width: 650px) {
-    .nav-container {
-        display: none;
-    }
-}
-
-@media (max-width: 1190px) {
-    .tech-card .figcaption {
-        font-size: 27px;
-    }
-}
-
-@media (max-width: 768px) {
-    .tech-card .figcaption {
-        font-size: 45px;
-    }
-}
-
-
-
